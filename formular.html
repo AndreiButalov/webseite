@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <title>Seite</title>
+    <link rel="stylesheet" href="Css/style.css" type="text/css"/>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="navi">
+            <button class="btn"><a href="index.html" title="zur startseite">Home</a></button>
+            <button class="btn"><a href="produkte.html" title="zur produkte">Produkte</a></button>
+            <button class="btn"><a href="überuns.html" title="zu überuns">Über uns</a></button>
+            <button class="btn"><a href="kontakte.html" title="zur kontakte">Kontakte</a></button>
+        </div>        
+        <div id="header">
+            <style>
+                h1{text-align: center;color: aliceblue;font-size:30px;}                
+                #header{background-image: url("Image/image.png");}
+            </style>
+            <br>
+            <h1>Formular</h1>  
+        </div>
+        <div id="content">
+            <form action="test.php" method="post">
+
+                <div class="form-row">
+                    <div class="form-label">Anrede</div>
+                    <div class="form-input">                    
+                        <select name="anrede">
+                            <option value="Frau">Frau</option>
+                            <option value="Herr">Herr</option>
+                        </select>        
+                    </div>
+                </div>
+    
+                <div class="form-row">
+                    <div class="form-label">Vorname</div>
+                        <div class="form-input">                        
+                            <input type="text" name="vorname"/>
+                     </div>
+                </div>    
+    
+                <div class="form-row">
+                    <div class="form-label">Nachname</div>
+                        <div class="form-input">                        
+                            <input type="text" name="nachname"/>
+                        </div>
+                </div>                
+    
+                <div class="form-row">
+                    <div class="form-label">E-mail</div>
+                        <div class="form-input">                        
+                            <input type="email" name="email"/>
+                        </div>
+                </div>
+    
+                <div class="form-row">
+                    <div class="form-label">Betreff</div>
+                        <div class="form-input">                        
+                            <input type="text" name="betreff"/>
+                        </div>
+                </div>
+    
+                <div class="form-row">
+                    <div class="form-label">Nachricht</div>
+                        <div class="form-input">                        
+                            <textarea name="nachricht" rows="8" cols="60"></textarea>
+                        </div>
+                </div>
+    
+                <div class="form-row">
+                    <div class="form-label"></div>
+                        <div class="form-input">                        
+                            <input type="submit" value="Absenden" name="send"/>
+                     </div>
+                </div>            
+                
+            </form>                                    
+        </div>
+        
+        <div id="footer">
+            <div id="unterelinke">
+                <p>
+                    Home<br>
+                    Produkte<br>
+                    Über uns<br>
+                    Kontakte                    
+                </p>   
+            </div> 
+            
+            <div class="weblinke">
+                <a href="https://www.instagram.com/">
+                    <img src="Image/instagram.png" width="40" height="40" alt="instagram">
+                </a>
+                
+            </div>
+            <div class="weblinke">
+                <a href="https://de-de.facebook.com/">
+                    <img src="Image/facebook.png" width="40" height="40" alt="facebook">
+                </a>                
+            </div>
+            <div class="weblinke">
+                <a href="https://twitter.com">
+                    <img src="Image/twiteer.png" width="40" height="40" alt="twitter">
+                </a>                
+            </div>
+        </div>
+
+    </div>    
+</body>
+</html>
